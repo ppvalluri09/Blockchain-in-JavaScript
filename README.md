@@ -1,2 +1,3 @@
 # Blockchain-in-JavaScript
-# Blockchain Implementation in JavaScript
+
+Blockchain Implementation in JavaScript
