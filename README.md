@@ -26,11 +26,11 @@ The Blockchain also has the following methods:
   
 The second part of the project consists of the Peer-to-Peer network implemented using Node.js, Express.js, Nodemon, Body-Parser, Request-Promise libraries... To be able to use this module, first install all the dependencies:
 
-                                                npm install express --save
-                                                npm install sha256 --save
-                                                npm install request-promise --save
-                                                npm install nodemon --save
-                                                npm install body-parser --save
+                                             npm install express --save
+                                             npm install sha256 --save
+                                             npm install request-promise --save
+                                             npm install nodemon --save
+                                             npm install body-parser --save
                                                 
 These modules are a must for the Network to function...
 
@@ -56,6 +56,48 @@ And also feel free to change the name of the currency implemented, I'm a huge fa
 
 # SnapShots
 
+Start Up your nodes using the command in your directory of the Project<br/><br/>
+![Screenshot (47)](https://user-images.githubusercontent.com/44934630/61467607-8a7c4080-a999-11e9-8c42-805ed26b8784.png)
+
+Goto the following end-point in your Browser and you see your blockchain with you Genesis Block alone<br/><br/>
+
+![Screenshot (48)](https://user-images.githubusercontent.com/44934630/61467635-936d1200-a999-11e9-852b-2b09f3e8b90b.png)
+
+Connect your other nodes together through a POST request from POSTMAN<br/><br/>
+
+![Screenshot (49)](https://user-images.githubusercontent.com/44934630/61467650-99fb8980-a999-11e9-8390-e629bf40db35.png)
+
+You can see the same Blockchain on all network nodes<br/><br/>
+
+![Screenshot (50)](https://user-images.githubusercontent.com/44934630/61467662-9ec03d80-a999-11e9-97b4-99913092b48f.png)
+
+Now add a new Transaction using POSTMAN like below<br/><br/>
+
+![Screenshot (51)](https://user-images.githubusercontent.com/44934630/61467680-a54eb500-a999-11e9-8d2e-8501c4f33be3.png)
+
+You can see the transaction has been added to the pending_transactions list<br/><br/>
+
+![Screenshot (52)](https://user-images.githubusercontent.com/44934630/61467689-ad0e5980-a999-11e9-8111-32de66e988f7.png)
+
+Now use the mine end point to mine the Blockchain<br/><br/>
+
+![Screenshot (53)](https://user-images.githubusercontent.com/44934630/61467696-b39cd100-a999-11e9-9161-f0a2dc78b3d3.png)
+
+You can see that the end-point returns a mined block who's data is as shown<br/><br/>
+
+![Screenshot (54)](https://user-images.githubusercontent.com/44934630/61467714-bac3df00-a999-11e9-8d00-e1abc0492cc9.png)
+
+See that the transaction was mined and added to the chain and pending transactions consists of a new transaction, which is the miner's reward for mining the Block<br/><br/>
+
+![Screenshot (55)](https://user-images.githubusercontent.com/44934630/61467725-c0b9c000-a999-11e9-8e43-57d0f96ce54d.png)
+
+Verify for the consistency of the Blockchain by checking the other blocks also, we can see that all the nodes have the updated Data, making sure that our Peer-to-Peer network is working perfectly<br/><br/>
+
+![Screenshot (56)](https://user-images.githubusercontent.com/44934630/61467739-c6170a80-a999-11e9-802e-0c885d2a206b.png)
+
+# Conclusion
+
+There we go, our very own Decentralised Blockchain Network in JavaScript which replicates the Bitcoin Blockchain network and works without any flaw... Moreover it is also very secure because of the implementation of the Proof-Of-Work... And we can ensure Data Consistency and lack of fake/false data due to the implementation of the Consensus Algorithm (Longest-Chain-Length).
 
 
 # Author
