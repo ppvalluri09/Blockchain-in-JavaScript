@@ -26,11 +26,11 @@ The Blockchain also has the following methods:
   
 The second part of the project consists of the Peer-to-Peer network implemented using Node.js, Express.js, Nodemon, Body-Parser, Request-Promise libraries... To be able to use this module, first install all the dependencies:
 
-                                             npm install express --save
-                                             npm install sha256 --save
-                                             npm install request-promise --save
-                                             npm install nodemon --save
-                                             npm install body-parser --save
+                                            npm install express --save
+                                            npm install sha256 --save
+                                            npm install request-promise --save
+                                            npm install nodemon --save
+                                            npm install body-parser --save
                                                 
 These modules are a must for the Network to function...
 
