@@ -1,3 +1,3 @@
-# Blockchain-in-JavaScript
+# Decentralised Blockchain Network
 
-Blockchain Implementation in JavaScript
+A decentralised network implemented in JavaScript...
