@@ -1,0 +1,30 @@
+{
+  "name": "blockchain",
+  "version": "1.0.0",
+  "description": "Blockchain implementation in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node_1": "nodemon --watch dev -e js dev/network_node.js 8080 http://localhost:8080",
+    "node_2": "nodemon --watch dev -e js dev/network_node.js 8081 http://localhost:8081",
+    "node_3": "nodemon --watch dev -e js dev/network_node.js 8082 http://localhost:8082",
+    "node_4": "nodemon --watch dev -e js dev/network_node.js 8083 http://localhost:8083",
+    "node_5": "nodemon --watch dev -e js dev/network_node.js 8084 http://localhost:8084"
+  },
+  "keywords": [
+    "Blockchain",
+    "JavaScript",
+    "Node"
+  ],
+  "author": "Valluri Pavan Preetham",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "sha256": "^0.2.0",
+    "uuid": "^3.3.2"
+  }
+}
