@@ -44,11 +44,11 @@ My network_node.js file consists of the following end-points:
 
   - '/blockchain' - returns the Blockchain Data Structure
   - '/transaction' - Performs a transaction and adds it to the Pending Transactions
-  - '/mine' - This end-point uses the Proof-Of-Work to calculate the Hash and Nonce and creates a new block using the ```javascript createNewBlock()``` method and adds the resulting block to the blockchain's chain...
+  - '/mine' - This end-point uses the Proof-Of-Work to calculate the Hash and Nonce and creates a new block using the  createNewBlock() method and adds the resulting block to the blockchain's chain...
   - '/register-and-broadcast-node' - To register a new node and broadcast it to the other nodes in the network for them to register it
   - '/register-node' - To register a new node with a particular node
   - '/register-nodes-bulk' - To register the existing nodes in the network with the new node to be added to the network
-  - '/consensus' - To use the ```javascript chainIsValid()``` method to apply the consensus algorithm or the longest chain rule to validate the blockchain with the blockchain data present in the other nodes...
+  - '/consensus' - To use the chainIsValid() method to apply the consensus algorithm or the longest chain rule to validate the blockchain with the blockchain data present in the other nodes...
 
 # Usage
 
