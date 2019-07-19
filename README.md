@@ -16,13 +16,15 @@ The first part which is the Blockchain is implemented as a Constructor function 
   
 The Blockchain also has the following methods:
 
+```javascript
   - createNewBlock()
   - hashBlock()
   - createNewTransaction()
   - getLastBlock()
   - chainIsValid()
-  - addTransactionToPendingTransactions
+  - addTransactionToPendingTransactions()
   - proofOfWork()
+```  
   
 The second part of the project consists of the Peer-to-Peer network implemented using Node.js, Express.js, Nodemon, Body-Parser, Request-Promise libraries... To be able to use this module, first install all the dependencies:
 
@@ -40,13 +42,13 @@ Since we are testing this on our local computer, I have modified my package.json
 
 My network_node.js file consists of the following end-points:
 
-  + '/blockchain' - returns the Blockchain Data Structure
+  - '/blockchain' - returns the Blockchain Data Structure
   - '/transaction' - Performs a transaction and adds it to the Pending Transactions
-  - '/mine' - This end-point uses the Proof-Of-Work to calculate the Hash and Nonce and creates a new block using the createNewBlock() method and adds the resulting block to the blockchain's chain...
+  - '/mine' - This end-point uses the Proof-Of-Work to calculate the Hash and Nonce and creates a new block using the ```javascript createNewBlock()``` method and adds the resulting block to the blockchain's chain...
   - '/register-and-broadcast-node' - To register a new node and broadcast it to the other nodes in the network for them to register it
   - '/register-node' - To register a new node with a particular node
   - '/register-nodes-bulk' - To register the existing nodes in the network with the new node to be added to the network
-  - '/consensus' - To use the chainIsValid() method to apply the consensus algorithm or the longest chain rule to validate the blockchain with the blockchain data present in the other nodes...
+  - '/consensus' - To use the ```javascript chainIsValid()``` method to apply the consensus algorithm or the longest chain rule to validate the blockchain with the blockchain data present in the other nodes...
 
 # Usage
 
