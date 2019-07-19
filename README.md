@@ -48,7 +48,6 @@ My network_node.js file consists of the following end-points:
   - '/register-nodes-bulk' - To register the existing nodes in the network with the new node to be added to the network
   - '/consensus' - To use the chainIsValid() method to apply the consensus algorithm or the longest chain rule to validate the blockchain with the blockchain data present in the other nodes...
   
-  
 # Usage
 
 One can use and test this network by using an application called POSTMAN which is used to perform POST requests to the Nodes...
